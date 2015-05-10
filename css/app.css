@@ -1,0 +1,395 @@
+#header {
+    background: #333;
+    height: 2.8125rem;
+    line-height: 2.8125rem;
+}
+
+#main {
+    margin-bottom: 1.2em;
+    padding: 0 10px;
+}
+.main-header, .detail .post-body h2 {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0 2px;
+    margin-bottom: 0;
+    color: #222;
+    font-size: 18px;
+    font-weight: normal;
+}
+.detail .main-header, .detail .post-body h2 {
+    font-size: 22px;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+}
+.detail .post-body h2 {
+    font-size: 18px;
+}
+
+.list .post {
+    border-bottom: 1px solid #ccc;
+    padding: 12px 0 10px;
+}
+.list .post .title {
+    line-height: 1.3;
+    margin: 0 0 0.3em;
+    font-size: 15px;
+}
+
+.list .post-body {
+    color: #444;
+    margin: 0;
+    padding: 0 0 5px;
+    font-size: 13px;
+}
+
+.post-link {
+    color: #07c;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-bottom: 1.2em;
+}
+.detail .post-link {
+    color: #222;
+    font-size: 24px;
+    margin-bottom: 0.5em;
+}
+.post-link:hover, .post-link:active {
+    color: #30a7fc;
+}
+
+.tags {
+    float: left;
+    line-height: 18px;
+}
+.post-tag {
+    background: none repeat scroll 0 0 #e4edf4;
+    border: 1px solid #e4edf4;
+    border-radius: 0;
+    color: #3e6d8e;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    margin: 2px 5px 2px 0;
+    padding: 0.4em 0.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.post-info {
+    padding-top: 7px;
+    white-space: nowrap;
+    color: #999;
+    float: right;
+    line-height: 18px;
+    width: auto;
+    font-size: 11px;
+}
+.post-info i {
+    margin-right: 2px;
+}
+.post-info .date, .post-info .visitors {
+    margin-right: 7px;
+}
+
+.pager {
+    margin-top: 5px;
+}
+.pager a {
+    background: none;
+    border-radius: 3px;
+    color: #999999;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: inherit;
+    padding: 0.05em 0.5em;
+    transition: background-color 300ms ease-out 0s;
+}
+.pager a:hover, .pager a:focus {
+    background-color: #e6e6e6;
+}
+
+#footer {
+    font-size: 10px;
+    color: #aaa;
+}
+
+.tag-cloud {
+    padding: 12px 0 10px;
+}
+.tag-cell {
+    margin-right: 1em;
+}
+.tag-cell .multi {
+    color: #888;
+    margin-right: 4px;
+}
+.tag-cell .multi-count {
+    color: #777;
+    font-size: 11px;
+}
+
+
+/* gist
+--------------------------- */
+.gist {
+    font-size: 12px;
+}
+.gist table {
+    margin: 0;
+    width: 100%;
+    border: none;
+}
+.gist table pre {
+    font-size: 12px;
+}
+.gist table .line-numbers {
+    font-size: 12px;
+}
+
+/* code highlight
+--------------------------- */
+
+.codehilitetable {
+    margin: 0;
+    width: auto;
+}
+.codehilitetable tr th {
+    border: medium none;
+}
+.codehilitetable tr th, .codehilitetable tr td {
+    border: medium none;
+    padding: 0;
+}
+.codehilitetable .linenos pre {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+}
+.codehilitetable pre {
+    margin: 0;
+}
+
+.codehilite code, .codehilite pre {
+    background-color: #3f3f3f;
+    border-radius: 3px;
+    color: #fdce93;
+    padding: 10px;
+}
+.codehilite .hll {
+    background-color: #222;
+}
+.codehilite .c {
+    color: #7f9f7f;
+}
+.codehilite .err {
+    background-color: #3d3535;
+    color: #e37170;
+}
+.codehilite .g {
+    color: #7f9f7f;
+}
+.codehilite .k {
+    color: #f0dfaf;
+}
+.codehilite .l {
+    color: #ccc;
+}
+.codehilite .n {
+    color: #dcdccc;
+}
+.codehilite .o {
+    color: #f0efd0;
+}
+.codehilite .x {
+    color: #ccc;
+}
+.codehilite .p {
+    color: #41706f;
+}
+.codehilite .cm {
+    color: #7f9f7f;
+}
+.codehilite .cp {
+    color: #7f9f7f;
+}
+.codehilite .c1 {
+    color: #7f9f7f;
+}
+.codehilite .cs {
+    color: #cd0000;
+    font-weight: bold;
+}
+.codehilite .gd {
+    color: #cd0000;
+}
+.codehilite .ge {
+    color: #ccc;
+    font-style: italic;
+}
+.codehilite .gr {
+    color: red;
+}
+.codehilite .gh {
+    color: #dcdccc;
+    font-weight: bold;
+}
+.codehilite .gi {
+    color: #00cd00;
+}
+.codehilite .go {
+    color: gray;
+}
+.codehilite .gp {
+    color: #dcdccc;
+    font-weight: bold;
+}
+.codehilite .gs {
+    color: #ccc;
+    font-weight: bold;
+}
+.codehilite .gu {
+    color: purple;
+    font-weight: bold;
+}
+.codehilite .gt {
+    color: #0040d0;
+}
+.codehilite .kc {
+    color: #dca3a3;
+}
+.codehilite .kd {
+    color: #ffff86;
+}
+.codehilite .kn {
+    color: #dfaf8f;
+    font-weight: bold;
+}
+.codehilite .kp {
+    color: #cdcf99;
+}
+.codehilite .kr {
+    color: #cdcd00;
+}
+.codehilite .kt {
+    color: #00cd00;
+}
+.codehilite .ld {
+    color: #cc9393;
+}
+.codehilite .m {
+    color: #8cd0d3;
+}
+.codehilite .s {
+    color: #cc9393;
+}
+.codehilite .na {
+    color: #9ac39f;
+}
+.codehilite .nb {
+    color: #efef8f;
+}
+.codehilite .nc {
+    color: #efef8f;
+}
+.codehilite .no {
+    color: #ccc;
+}
+.codehilite .nd {
+    color: #ccc;
+}
+.codehilite .ni {
+    color: #c28182;
+}
+.codehilite .ne {
+    color: #c3bf9f;
+    font-weight: bold;
+}
+.codehilite .nf {
+    color: #efef8f;
+}
+.codehilite .nl {
+    color: #ccc;
+}
+.codehilite .nn {
+    color: #8fbede;
+}
+.codehilite .nx {
+    color: #ccc;
+}
+.codehilite .py {
+    color: #ccc;
+}
+.codehilite .nt {
+    color: #9ac39f;
+}
+.codehilite .nv {
+    color: #dcdccc;
+}
+.codehilite .ow {
+    color: #f0efd0;
+}
+.codehilite .w {
+    color: #ccc;
+}
+.codehilite .mf {
+    color: #8cd0d3;
+}
+.codehilite .mh {
+    color: #8cd0d3;
+}
+.codehilite .mi {
+    color: #8cd0d3;
+}
+.codehilite .mo {
+    color: #8cd0d3;
+}
+.codehilite .sb {
+    color: #cc9393;
+}
+.codehilite .sc {
+    color: #cc9393;
+}
+.codehilite .sd {
+    color: #cc9393;
+}
+.codehilite .s2 {
+    color: #cc9393;
+}
+.codehilite .se {
+    color: #cc9393;
+}
+.codehilite .sh {
+    color: #cc9393;
+}
+.codehilite .si {
+    color: #cc9393;
+}
+.codehilite .sx {
+    color: #cc9393;
+}
+.codehilite .sr {
+    color: #cc9393;
+}
+.codehilite .s1 {
+    color: #cc9393;
+}
+.codehilite .ss {
+    color: #cc9393;
+}
+.codehilite .bp {
+    color: #efef8f;
+}
+.codehilite .vc {
+    color: #efef8f;
+}
+.codehilite .vg {
+    color: #dcdccc;
+}
+.codehilite .vi {
+    color: #ffffc7;
+}
+.codehilite .il {
+    color: #8cd0d3;
+}
