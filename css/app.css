@@ -41,6 +41,12 @@
     padding: 0 0 5px;
     font-size: 13px;
 }
+.detail .post-body, .detail .post-body p, .detail .post-body li {
+    font-size: 15px;
+}
+ .detail .post-body p {
+    margin-bottom: .7rem;
+}
 
 .post-link {
     color: #07c;
@@ -112,8 +118,9 @@
 }
 
 #footer {
-    font-size: 10px;
+    font-size: 11px;
     color: #aaa;
+    margin-bottom: 1rem;
 }
 
 .tag-cloud {
@@ -171,14 +178,15 @@
     border: medium none;
 }
 .codehilitetable pre {
-    margin: 0;
+    margin: 0 0 1.25rem;
 }
 
 .codehilite code, .codehilite pre {
     background-color: #3f3f3f;
     border-radius: 3px;
     color: #fdce93;
-    padding: 10px;
+    padding: 5px 7px;
+    margin: 0 0 1rem;
 }
 .codehilite .hll {
     background-color: #222;
