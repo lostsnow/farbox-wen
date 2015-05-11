@@ -126,6 +126,9 @@
     color: #888;
     margin-right: 4px;
 }
+.tag-cell .multi-x {
+    font-size: 13px;
+}
 .tag-cell .multi-count {
     color: #777;
     font-size: 11px;
