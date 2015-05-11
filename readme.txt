@@ -1,6 +1,6 @@
 key: Question
 title: 问
-domain: http://qa.lsproc.com
+domain: http://question.farbox.com
 
 Farbox Wen
 ==========
@@ -9,4 +9,4 @@ Farbox template for Question & Answer
 
 ### demo
 
-http://qatest.lsproc.com/
+http://question.farbox.com/

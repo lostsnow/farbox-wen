@@ -1,9 +1,9 @@
 if paginator.has_pre or paginator.has_next
-	+i18n('Pre', '上一页', 'zh_cn')
-	+i18n('Next', '下一页', 'zh_cn')
-	.clearfix
-	.pager
-		if paginator.has_pre
-			a.pre(href=paginator.pre_url)= _('Pre')
-		if paginator.has_next
-			a.next(href=paginator.next_url)= _('Next')
+    +i18n('Pre', '上一页', 'zh_cn')
+    +i18n('Next', '下一页', 'zh_cn')
+    .clearfix
+    .pager
+        if paginator.has_pre
+            a.pre.left(href=paginator.pre_url)= _('Pre')
+        if paginator.has_next
+            a.next.right(href=paginator.next_url)= _('Next')

@@ -1,14 +1,14 @@
 extends base
 
 block content
-	h1.main-header
-		| Tags
-	.tag-cloud
-		if site.tags
-			.tags
-				for tag in site.tags
-					span.tag-cell
-						a.post-tag(href="/tag/{{tag[0]}}")= tag[0]
-						span.multi
-							span.multi-x= '×'
-							span.multi-count= tag[1]
+    h1.main-header
+        | Tags
+    .tag-cloud
+        if site.tags
+            .tags
+                for tag in site.tags
+                    span.tag-cell
+                        a.post-tag(href="/tag/{{tag[0]}}")= tag[0]
+                        span.multi
+                            span.multi-x= '?
+                            span.multi-count= tag[1]

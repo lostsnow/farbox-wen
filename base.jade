@@ -1,58 +1,58 @@
 html
-	+i18n('Home', '首页', 'zh_cn')
-	+i18n('Tags', '标签', 'zh_cn')
-	+i18n('About', '关于', 'zh_cn')
-	+i18n('Search', '搜索', 'zh_cn')
-	head
-		+mobile_meta()
-		meta(name="keywords", content=site.configs.keywords.escaped)
-		meta(name="description", content=site.raw_content.escaped)
-		block title
-			title= request.args.s or post.title or tags.join('+') or category.title or site.title
-		load('fonts /template/css/foundation.min.css /template/css/app.css')
-	body
-		#header
-			nav.top-bar.row(data-topbar="", role="navigation")
-				ul.title-area
-					li.name
-						h1
-							a(href='/')= site.title
-					li.toggle-topbar.menu-icon
-						a(href="#")
-							span
-				section.top-bar-section
-					ul.right
-						li
-							a(href="/")= _('Home')
-						if site.tags
-							li
-								a(href='/tags')= _('Tags')
-						pages = get_data(status='pages', type='post', limit=5, with_page=False, sort='position')
-						for page_p in pages
-							li
-								a(href="/{{page_p.path}}")= _(page_p.filename.split('.')[0].title())
-						li
-							a(href="/feed") RSS
-						li
-							.row.collapse
-								.large-9.small-9.columns
-									input(type='text', id='search_value', value=request.args.s, onkeyup="if (event.keyCode == 13) search();")
-								.large-3.small-3.columns
-									a.success.button.expand(href="javascript:search()")= _('Search')
+    +i18n('Home', '首页', 'zh_cn')
+    +i18n('Tags', '标签', 'zh_cn')
+    +i18n('About', '关于', 'zh_cn')
+    +i18n('Search', '搜索', 'zh_cn')
+    head
+        +mobile_meta()
+        meta(name="keywords", content=site.configs.keywords.escaped)
+        meta(name="description", content=site.raw_content.escaped)
+        block title
+            title= request.args.s or post.title or tags.join('+') or category.title or site.title
+        load('fonts /template/css/foundation.min.css /template/css/app.css')
+    body
+        #header
+            nav.top-bar.row(data-topbar="", role="navigation")
+                ul.title-area
+                    li.name
+                        h1
+                            a(href='/')= site.title
+                    li.toggle-topbar.menu-icon
+                        a(href="#")
+                            span
+                section.top-bar-section
+                    ul.right
+                        li
+                            a(href="/")= _('Home')
+                        if site.tags
+                            li
+                                a(href='/tags')= _('Tags')
+                        pages = get_data(status='pages', type='post', limit=5, with_page=False, sort='position')
+                        for page_p in pages
+                            li
+                                a(href="/{{page_p.path}}")= _(page_p.filename.split('.')[0].title())
+                        li
+                            a(href="/feed") RSS
+                        li
+                            .row.collapse
+                                .large-9.small-9.columns
+                                    input(type='text', id='search_value', value=request.args.s, onkeyup="if (event.keyCode == 13) search();")
+                                .large-3.small-3.columns
+                                    a.success.button.expand(href="javascript:search()")= _('Search')
 
-		#main.row
-			block content
+        #main.row
+            block content
 
-		#footer.row
-			.text-center
-				| Powered By
-				a(href="https://www.farbox.com", target="_blank") FarBox.com
-				| &nbsp;
-				| Theme by
-				a(href="http://www.lsproc.com", target="_blank") lostsnow
-				| &nbsp;
-				a.admin(href="/admin")  Admin
+        #footer.row
+            .text-center
+                | Powered By
+                a(href="https://www.farbox.com", target="_blank") FarBox.com
+                | &nbsp;
+                | Theme by
+                a(href="http://www.lsproc.com", target="_blank") lostsnow
+                | &nbsp;
+                a.admin(href="/admin")  Admin
 
-		load('jquery /template/js/foundation.min.js /template/js/script.coffee')
-		script.
-			$(document).foundation();
+        load('jquery /template/js/foundation.min.js /template/js/script.coffee')
+        script.
+            $(document).foundation();
