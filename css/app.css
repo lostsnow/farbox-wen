@@ -127,7 +127,8 @@
     padding: 12px 0 10px;
 }
 .tag-cell {
-    margin-right: 1em;
+    margin-right: 0.6em;
+    display: inline-block;
 }
 .tag-cell .multi {
     color: #888;
