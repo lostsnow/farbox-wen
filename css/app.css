@@ -21,8 +21,14 @@
     margin-bottom: 0.5em;
     padding-bottom: 0.5em;
 }
-.detail .post-body h2 {
+.detail .post-body h3 {
     font-size: 18px;
+}
+.detail .post-body h4 {
+    font-size: 17px;
+}
+.detail .post-body h5, .detail .post-body h6 {
+    font-size: 16px;
 }
 
 .list .post {
@@ -44,7 +50,7 @@
 .detail .post-body, .detail .post-body p, .detail .post-body li {
     font-size: 15px;
 }
- .detail .post-body p {
+.detail .post-body p {
     margin-bottom: .7rem;
 }
 
